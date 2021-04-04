@@ -2,7 +2,8 @@ body {
     background-color: rgb(48, 58, 61);
 }
 header {
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5438550420168067) 55%, rgba(0,0,0,0) 100%);
     color: white;
 }
 #show-reel-container {
