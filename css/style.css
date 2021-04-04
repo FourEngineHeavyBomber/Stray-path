@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    font-family: 'New Tegomin', serif;
+    padding: 0;
+}
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 5px;
+    background-color: transparent;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+#title {
+    padding-left: 5%;
+    grid-column: 1;
+}
+#bright-trip, #reel {
+    font-size: 1.25em;
+    text-align: center;
+}
+#reel {
+    grid-column: 2;
+}
+#bright-trip {
+    grid-column: 3;
+}
+#bright-trip:hover, #reel:hover {
+    cursor: pointer;
+}
+#main_gif {
+    height: 100vh;
+    background-image: url('../imgs/random-animation.gif');
+    margin-bottom: 0;
+    align-self: center;
+}
+footer {
+    padding-top: 25px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 35px;
+}
+#insta-logo {
+    size: 10%;
+    max-width: 50px;
+}

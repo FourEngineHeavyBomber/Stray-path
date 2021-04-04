@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(48, 58, 61);
+}
+header {
+    background-color: black;
+    color: white;
+}
+#show-reel-container {
+    padding-top: 125px;
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: auto;
+}
+
+#show-reel-container > img {
+    max-width: 100%;
+}
