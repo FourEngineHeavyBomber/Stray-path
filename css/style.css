@@ -29,11 +29,16 @@ header {
 #bright-trip:hover, #reel:hover {
     cursor: pointer;
 }
-#main_gif {
+/* #main_gif {
     height: 100vh;
     background-image: url('../imgs/random-animation.gif');
     margin-bottom: 0;
     align-self: center;
+} */
+#main-video {
+    height: 100vh;
+    width: 100%;
+    border: none;
 }
 footer {
     padding-top: 25px;
