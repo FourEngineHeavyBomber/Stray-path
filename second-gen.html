@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #straypath-logo {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: auto;
+        }
+        @media only screen and (min-width: 500px) {
+            body {
+                margin: 0;
+                display: grid;
+                grid-template-columns: 40% 60%;
+                grid-template-rows: 100vh;
+            }
+            #straypath-logo {
+                margin-left: 0;
+                grid-column: 1;
+            }
+            #nav-menu {
+                width: 300px;
+                grid-column: 1;
+            }
+            .menu-item {
+                width: 300px;
+            }
+            #main-video {
+                grid-column: 2;
+                grid-row: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src='imgs/logo.png' id='straypath-logo'>
+        <div id='nav-menu'>
+            <a href='' class='menu-item'>Stills</a>
+            <a href='' class='menu-item'>On Camera</a>
+            <a href='' class='menu-item'>Directing</a>
+        </div>
+        <iframe 
+            id='main-video'
+            src="https://www.youtube.com/embed/MECjd8IEFTk">
+        </iframe>
+        
+    </header>
+</body>
+</html>
