@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * { margin: 0; }
         #main-logo {
             width: calc(100% - 25px);
             max-width: 400px;
             padding-right: 25px;
+            padding-top: 10px;
         }
         .centre {
             display: block;
@@ -18,24 +20,62 @@
         #navigation {
             position: absolute;
             z-index: 1;
-            top: 10px;
+            top: 0;
             width: 95%;
         }
         #hamburger-bar {
             width: 75px;
+            padding-top: 10px;
             float: right;
         }
         #hamburger-bar:hover { 
             cursor: pointer;
             }
+        .show-me { display: bloxk; }
+        .hide-me { display:  none; }
+        #nav-menu {
+            z-index: 2;
+            height: 100vh;
+            width: 100vw;
+            background-color: blueviolet;
+        }
+        #nav-menu > a {
+            width: 100vw;
+            font-size: 5em;
+        }
         /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
-        @media only screen and (min-width: 650px) {}
+        @media only screen and (min-width: 650px) {
+            
+            #hamburger-bar {
+                display: none;
+            }
+            #navigation {
+                top: 460px;
+                z-index: 0;
+                background-color: aqua;
+                padding-top: 50px;
+                width: 100vw;
+            }
+        }
     </style>
+    <script>
+        function fn() {
+            document.getElementById('nav-menu').classList.add('show-me')
+            document.getElementById('nav-menu').classList.remove('hide-me')
+            document.getElementById('hamburger-bar').classList.add('hide-me');
+        }
+    </script>
 </head>
 <body>
     <img src='imgs/logo.png' id='main-logo' class='centre'>
     <div id='navigation'>
-        <img id='hamburger-bar' src='imgs/menu.png'>
+        <img id='hamburger-bar' src='imgs/menu.png' onclick='fn()'>
+        <div id='nav-menu' class='hide-me'>
+            <a href='#'>stills</a>
+            <a href='#'>on camera</a>
+            <a href='#'>directing</a>
+            <button>&times;</button>
+        </div>
     </div>
 </body>
 </html>
