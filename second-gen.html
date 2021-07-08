@@ -6,50 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #straypath-logo {
-            width: 100%;
-            max-width: 300px;
+        #main-logo {
+            width: calc(100% - 25px);
+            max-width: 400px;
+            padding-right: 25px;
+        }
+        .centre {
             display: block;
             margin: auto;
         }
-        @media only screen and (min-width: 500px) {
-            body {
-                margin: 0;
-                display: grid;
-                grid-template-columns: 40% 60%;
-                grid-template-rows: 100vh;
-            }
-            #straypath-logo {
-                margin-left: 0;
-                grid-column: 1;
-            }
-            #nav-menu {
-                width: 300px;
-                grid-column: 1;
-            }
-            .menu-item {
-                width: 300px;
-            }
-            #main-video {
-                grid-column: 2;
-                grid-row: 1;
-            }
+        #navigation {
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            width: 95%;
         }
+        #hamburger-bar {
+            width: 75px;
+            float: right;
+        }
+        #hamburger-bar:hover { 
+            cursor: pointer;
+            }
+        /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
+        @media only screen and (min-width: 650px) {}
     </style>
 </head>
 <body>
-    <header>
-        <img src='imgs/logo.png' id='straypath-logo'>
-        <div id='nav-menu'>
-            <a href='' class='menu-item'>Stills</a>
-            <a href='' class='menu-item'>On Camera</a>
-            <a href='' class='menu-item'>Directing</a>
-        </div>
-        <iframe 
-            id='main-video'
-            src="https://www.youtube.com/embed/MECjd8IEFTk">
-        </iframe>
-        
-    </header>
+    <img src='imgs/logo.png' id='main-logo' class='centre'>
+    <div id='navigation'>
+        <img id='hamburger-bar' src='imgs/menu.png'>
+    </div>
 </body>
 </html>
