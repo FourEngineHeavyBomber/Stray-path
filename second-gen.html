@@ -17,7 +17,7 @@
             display: block;
             margin: auto;
         }
-        #navigation {
+        #mob-nav {
             position: absolute;
             z-index: 1;
             top: 0;
@@ -33,13 +33,13 @@
             }
         .show-me { display: bloxk; }
         .hide-me { display:  none; }
-        #nav-menu {
+        #mob-nav-menu {
             z-index: 2;
             height: 100vh;
             width: 100vw;
             background-color: blueviolet;
         }
-        #nav-menu > a {
+        #mob-nav-menu > a {
             width: 100vw;
             font-size: 5em;
         }
@@ -49,7 +49,8 @@
             #hamburger-bar {
                 display: none;
             }
-            #navigation {
+            #mob-nav { display: none; }
+            #deskt-nav {
                 top: 460px;
                 z-index: 0;
                 background-color: aqua;
@@ -60,22 +61,29 @@
     </style>
     <script>
         function fn() {
-            document.getElementById('nav-menu').classList.add('show-me')
-            document.getElementById('nav-menu').classList.remove('hide-me')
+            document.getElementById('mob-nav-menu').classList.add('show-me')
+            document.getElementById('mob-nav-menu').classList.remove('hide-me')
             document.getElementById('hamburger-bar').classList.add('hide-me');
+        }
+        function undo() {
+            document.getElementById('mob-nav-menu').classList.remove('show-me')
+            document.getElementById('mob-nav-menu').classList.add('hide-me')
+            document.getElementById('hamburger-bar').classList.remove('hide-me');
+            document.getElementById('hamburger-bar').classList.add('show-me');
         }
     </script>
 </head>
 <body>
     <img src='imgs/logo.png' id='main-logo' class='centre'>
-    <div id='navigation'>
+    <div id='mob-nav'>
         <img id='hamburger-bar' src='imgs/menu.png' onclick='fn()'>
-        <div id='nav-menu' class='hide-me'>
+        <div id='mob-nav-menu' class='hide-me'>
             <a href='#'>stills</a>
             <a href='#'>on camera</a>
             <a href='#'>directing</a>
-            <button>&times;</button>
+            <button onclick='undo()'>&times;</button>
         </div>
     </div>
+    <div id='deskt-nav'></div>
 </body>
 </html>
