@@ -9,3 +9,7 @@ function undo() {
     document.getElementById('hamburger-bar').classList.remove('hide-me');
     document.getElementById('hamburger-bar').classList.add('show-me');
 }
+
+function Redirect(place) {
+    window.location = place;
+ }
