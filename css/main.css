@@ -1,0 +1,116 @@
+* { 
+    margin: 0; 
+    font-family: 'Oswald', sans-serif;
+}
+#main-logo {
+    width: calc(100% - 25px);
+    max-width: 400px;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+.centre {
+    display: block;
+    margin: auto;
+}
+#mob-nav {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 95%;
+}
+#hamburger-bar {
+    width: 75px;
+    padding-top: 10px;
+    right: 10px;
+    position: fixed;
+}
+#hamburger-bar:hover { 
+    cursor: pointer;
+    }
+.show-me { display: bloxk; }
+.hide-me { display:  none; }
+#mob-nav-menu {
+    z-index: 2;
+    height: 100vh;
+    width: 96.7vw;
+    background-color: rgb(68, 68, 68);
+    position: fixed;
+}
+.mobile-nav-btn {
+    width: 100%;
+    font-size: 3em;
+    margin: 20px 0;
+    background-color: rgb(204, 204, 204);
+    border: none;
+
+}
+.mobile-nav-btn:hover {cursor: pointer;}
+.mobile-nav-btn:active {
+    transform: translateY(2px);
+    background-color: white;
+}
+.mobile-close-btn {
+    font-size: 3em;
+    float: right;
+    margin: 20px;
+    padding: 0 20px;
+    border: none;
+    background-color: rgb(204, 204, 204);
+}
+.mobile-close-btn:hover {cursor: pointer;}
+#deskt-nav {display: none;}
+#main-video {
+    width: 100%; 
+    height: 300px;
+    border: none;
+}
+footer {
+    padding-top: 25px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+#insta-logo {
+    size: 10%;
+    max-width: 50px;
+}
+.centre-txt {text-align: center;}
+/* arbitrary decision to switch between mobile and desktop at 650px but whatever */
+@media only screen and (min-width: 650px) {
+    
+    #hamburger-bar {
+        display: none;
+    }
+    #mob-nav { display: none; }
+    #deskt-nav {display: block;}
+    header {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: 400px 1fr;
+    }
+    #main-logo { grid-column: 1;}
+    #deskt-nav {
+        grid-column: 1;
+        grid-row: 2;
+        top: 460px;
+        z-index: 0;
+        /* background-color: aqua; */
+        padding-top: 20px;
+        width: 100%;
+        font-size: 2.5em;
+        height: calc(100vh - 400px);
+    }
+    #deskt-nav > ul > li { list-style-type: none; }
+    
+    #deskt-nav > ul > li > a {
+        text-decoration: none;
+        color: black;
+    }
+    #main-video {
+        grid-column: 2;
+        grid-row: 1 / 2;
+        height: 100vh;
+        width: 100%;
+        border: none;
+    }
+    
+}

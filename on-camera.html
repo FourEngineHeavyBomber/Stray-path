@@ -4,24 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stray Path</title>
+    <title>Stray Path | On camera</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script>
-        function fn() {
-            document.getElementById('mob-nav-menu').classList.add('show-me')
-            document.getElementById('mob-nav-menu').classList.remove('hide-me')
-            document.getElementById('hamburger-bar').classList.add('hide-me');
-        }
-        function undo() {
-            document.getElementById('mob-nav-menu').classList.remove('show-me')
-            document.getElementById('mob-nav-menu').classList.add('hide-me')
-            document.getElementById('hamburger-bar').classList.remove('hide-me');
-            document.getElementById('hamburger-bar').classList.add('show-me');
-        }
-    </script>
+    <link rel="stylesheet" href="css/on_camera.css">
 </head>
 <body>
     <header>
@@ -37,15 +25,37 @@
         </div>
         <div id='deskt-nav'>
             <ul>
+                <li><a href='second-gen.html'>home</a></li>
                 <li><a href='#'>stills</a></li>
-                <li><a href='on-camera.html'>on camera</a></li>
                 <li><a href='directing.html'>directing</a></li>
             </ul>
         </div>
-        <iframe 
-            id='main-video'
-            src="https://www.youtube.com/embed/MECjd8IEFTk">
-        </iframe>
+        <div id='video-display'>
+            <h1 class='centre-txt'>on camera</h1>
+            <iframe 
+                class="display-video"
+                src="https://www.youtube.com/embed/dyXs6nJ_0QM">
+            </iframe>
+            <iframe 
+                class="display-video"
+                src="https://www.youtube.com/embed/Tjg5NmaRgnM">
+            </iframe>
+            <iframe 
+                class="display-video"
+                src="https://www.youtube.com/embed/TsTIDUl1ln8">
+            </iframe>
+            <iframe 
+                class="display-video"
+                src="https://www.youtube.com/embed/KfQZIB7OE_E">
+            </iframe>
+            <!-- https://www.youtube.com/watch?v= -->
+            <iframe 
+                class="display-video"
+                src="https://www.youtube.com/embed/ar_4O_jW6Q4">
+            </iframe>
+            <!-- https://www.youtube.com/watch?v= -->
+            
+        </div>
     </header>
     <footer>
         <h3>contact</h3>
