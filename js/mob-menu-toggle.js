@@ -10,6 +10,6 @@ function undo() {
     document.getElementById('hamburger-bar').classList.add('show-me');
 }
 
-function Redirect(place) {
+function redir (place) {
     window.location = place;
  }
