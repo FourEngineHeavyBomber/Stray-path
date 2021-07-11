@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stray Path</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; }
+        * { 
+            margin: 0; 
+            font-family: 'Oswald', sans-serif;
+        }
         #main-logo {
             width: calc(100% - 25px);
             max-width: 400px;
@@ -26,7 +32,8 @@
         #hamburger-bar {
             width: 75px;
             padding-top: 10px;
-            float: right;
+            right: 10px;
+            position: fixed;
         }
         #hamburger-bar:hover { 
             cursor: pointer;
@@ -36,12 +43,46 @@
         #mob-nav-menu {
             z-index: 2;
             height: 100vh;
-            width: 100vw;
-            background-color: blueviolet;
+            width: 96.7vw;
+            background-color: rgb(68, 68, 68);
+            position: fixed;
         }
-        #mob-nav-menu > a {
-            width: 100vw;
-            font-size: 5em;
+        .mobile-nav-btn {
+            width: 100%;
+            font-size: 3em;
+            margin: 20px 0;
+            background-color: rgb(204, 204, 204);
+            border: none;
+        
+        }
+        .mobile-nav-btn:hover {cursor: pointer;}
+        .mobile-nav-btn:active {
+            transform: translateY(2px);
+            background-color: white;
+        }
+        .mobile-close-btn {
+            font-size: 3em;
+            float: right;
+            margin: 20px;
+            padding: 0 20px;
+            border: none;
+            background-color: rgb(204, 204, 204);
+        }
+        .mobile-close-btn:hover {cursor: pointer;}
+        #deskt-nav {display: none;}
+        #main-video {
+            width: 100%; 
+            height: 300px;
+            border: none;
+        }
+        footer {
+            padding-top: 25px;
+            text-align: center;
+            padding-bottom: 35px;
+        }
+        #insta-logo {
+            size: 10%;
+            max-width: 50px;
         }
         /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
         @media only screen and (min-width: 650px) {
@@ -50,13 +91,38 @@
                 display: none;
             }
             #mob-nav { display: none; }
+            #deskt-nav {display: block;}
+            header {
+                display: grid;
+                grid-template-columns: 400px 1fr;
+                grid-template-rows: 400px 1fr;
+            }
+            #main-logo { grid-column: 1;}
             #deskt-nav {
+                grid-column: 1;
+                grid-row: 2;
                 top: 460px;
                 z-index: 0;
-                background-color: aqua;
-                padding-top: 50px;
-                width: 100vw;
+                /* background-color: aqua; */
+                padding-top: 20px;
+                width: 100%;
+                font-size: 2.5em;
+                height: calc(100vh - 400px);
             }
+            #deskt-nav > ul > li { list-style-type: none; }
+            
+            #deskt-nav > ul > li > a {
+                text-decoration: none;
+                color: black;
+            }
+            #main-video {
+                grid-column: 2;
+                grid-row: 1 / 2;
+                height: 100vh;
+                width: 100%;
+                border: none;
+            }
+            
         }
     </style>
     <script>
@@ -74,16 +140,34 @@
     </script>
 </head>
 <body>
-    <img src='imgs/logo.png' id='main-logo' class='centre'>
-    <div id='mob-nav'>
-        <img id='hamburger-bar' src='imgs/menu.png' onclick='fn()'>
-        <div id='mob-nav-menu' class='hide-me'>
-            <a href='#'>stills</a>
-            <a href='#'>on camera</a>
-            <a href='#'>directing</a>
-            <button onclick='undo()'>&times;</button>
+    <header>
+        <img src='imgs/logo.png' id='main-logo' class='centre'>
+        <div id='mob-nav'>
+            <img id='hamburger-bar' src='imgs/menu.png' onclick='fn()'>
+            <div id='mob-nav-menu' class='hide-me'>
+                <button class='mobile-close-btn' onclick='undo()'>&times;</button>
+                <button class='mobile-nav-btn'>stills</button>
+                <button class='mobile-nav-btn'>on camera</button>
+                <button class='mobile-nav-btn'>directing</button>
+            </div>
         </div>
-    </div>
-    <div id='deskt-nav'></div>
+        <div id='deskt-nav'>
+            <ul>
+                <li><a href='#'>stills</a></li>
+                <li><a href='#'>on camera</a></li>
+                <li><a href='#'>directing</a></li>
+            </ul>
+        </div>
+        <iframe 
+            id='main-video'
+            src="https://www.youtube.com/embed/MECjd8IEFTk">
+        </iframe>
+    </header>
+    <footer>
+        <h3>contact</h3>
+        <p>connor@lancastermail.com</p>
+        <p>&copy Anton Huggard & Connor Curlewis 2021</p>
+        <img id='insta-logo' src='imgs/insta.png'>
+    </footer>
 </body>
 </html>
