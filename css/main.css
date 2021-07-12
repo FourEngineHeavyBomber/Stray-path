@@ -74,6 +74,11 @@ footer {
     max-width: 50px;
 }
 .centre-txt {text-align: center;}
+.main-txt {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.main-txt > h3 { font-size: 3em;}
 /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
 @media only screen and (min-width: 650px) {
     
@@ -89,6 +94,8 @@ footer {
     }
     #main-logo { 
         grid-column: 1;
+        padding: 25px;
+        width: calc(100% - 50px);
     }
     #deskt-nav {
         grid-column: 1;
@@ -99,7 +106,7 @@ footer {
         padding-top: 20px;
         width: 100%;
         font-size: 1.25em;
-        height: calc(100vh - 400px);
+        /* height: calc(100vh - 400px); */
     }
     #deskt-nav > ul > li { list-style-type: none; }
     
@@ -111,9 +118,10 @@ footer {
     #main-video {
         grid-column: 2;
         grid-row: 1 / 2;
-        height: 100vh;
-        width: 100%;
+        height: calc(100vh - 50px);
+        width: calc(100% - 50px);
         border: none;
+        padding: 25px;
     }
     
 }
