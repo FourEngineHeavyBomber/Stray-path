@@ -78,7 +78,18 @@ footer {
     margin-top: 200px;
     margin-bottom: 200px;
 }
-.main-txt > h3 { font-size: 3em;}
+.main-txt > h3, .img-cluster > h3 { font-size: 3em;}
+.img-cluster > hr { 
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.gallery-img {
+    width: 100%;
+    max-width: 400px;
+    /* max-height: 200px; */
+}
+
 /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
 @media only screen and (min-width: 650px) {
     
@@ -122,6 +133,9 @@ footer {
         width: calc(100% - 50px);
         border: none;
         padding: 25px;
+    }
+    .img-cluster {
+        margin-top: 50px;
     }
     
 }

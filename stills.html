@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stray Path</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src='js/mob-menu-toggle.js'></script>
+</head>
+<body>
+    <header>
+        <img src='imgs/logo.png' id='main-logo' class='centre'>
+        <div id='mob-nav'>
+            <img id='hamburger-bar' src='imgs/menu.png' onclick='fn()'>
+            <div id='mob-nav-menu' class='hide-me'>
+                <button class='mobile-close-btn' onclick='undo()'>&times;</button>
+                <button class='mobile-nav-btn' onclick="redir('#')">stills</button>
+                <button class='mobile-nav-btn' onclick="redir('on-camera.html')">on camera</button>
+                <button class='mobile-nav-btn' onclick="redir('directing.html')">directing</button>
+            </div>
+        </div>
+        <div id='deskt-nav'>
+            <ul>
+                <li><a href='#'>home</a></li>
+                <li><a href='#'>stills</a></li>
+                <li><a href='on-camera.html'>on camera</a></li>
+                <li><a href='directing.html'>directing</a></li>
+                <li><a href='#'>non-fiction</a></li>
+                <li><a href='#'>music Videos</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class='img-cluster centre-txt '>
+                <h3>folks</h3>
+                <hr>
+                <img class='gallery-img' src='imgs/Folks/000008.JPG'>
+                <img class='gallery-img' src='imgs/Folks/cj-and-branches.jpeg'>
+                <img class='gallery-img' src='imgs/Folks/SAM_9002.jpg'>
+                <img class='gallery-img' src='imgs/Folks/SAM_9108.jpg'>
+                <img class='gallery-img' src='imgs/Folks/SAM_9143.jpg'>
+            </div>
+            <div class='img-cluster centre-txt '>
+                <h3>wides</h3>
+                <hr>
+                <img class='gallery-img' src='imgs/Wides/200221000000040012.jpg'>
+                <img class='gallery-img' src='imgs/Wides/200221000000040013.jpg'>
+                <img class='gallery-img' src='imgs/Wides/200221000000040008.jpg'>
+                <img class='gallery-img' src='imgs/Wides/5853-PCL-001.JPG'>
+                <img class='gallery-img' src='imgs/Wides/5853-PCL-002.JPG'>
+            </div>
+            <div class='img-cluster centre-txt '>
+                <h3>music</h3>
+                <hr>
+                <img class='gallery-img' src='imgs/Music/5854-PCL-010.JPG'>
+                <img class='gallery-img' src='imgs/Music/5854-PCL-021.JPG'>
+                <img class='gallery-img' src='imgs/Music/5855-PCL-024.JPG'>
+                <img class='gallery-img' src='imgs/Music/5855-PCL-029.JPG'>
+                <img class='gallery-img' src='imgs/Music/6033-PCL-003.JPG'>
+                <img class='gallery-img' src='imgs/Music/6034-PCL-007.JPG'>
+                <img class='gallery-img' src='imgs/Music/6034-PCL-034.JPG'>                
+            </div>
+        </div>   
+    </header>
+</body>
+</html>
