@@ -12,17 +12,9 @@
     <script src='js/mob-menu-toggle.js'></script>
 </head>
 <body>
-    <header>
+    <div id='nav-content'>
         <img src='imgs/logo.png' id='main-logo' class='centre'>
-        <div id='mob-nav'>
-            <img id='hamburger-bar' src='imgs/menu.png' onclick='fn()'>
-            <div id='mob-nav-menu' class='hide-me'>
-                <button class='mobile-close-btn' onclick='undo()'>&times;</button>
-                <button class='mobile-nav-btn' onclick="redir('#')">stills</button>
-                <button class='mobile-nav-btn' onclick="redir('on-camera.html')">on camera</button>
-                <button class='mobile-nav-btn' onclick="redir('directing.html')">directing</button>
-            </div>
-        </div>
+    
         <div id='deskt-nav'>
             <ul>
                 <li><a href='#'>home</a></li>
@@ -33,38 +25,39 @@
                 <li><a href='#'>music Videos</a></li>
             </ul>
         </div>
-        <div>
-            <div class='img-cluster centre-txt '>
-                <h3>folks</h3>
-                <hr>
-                <img class='gallery-img' src='imgs/Folks/000008.JPG'>
-                <img class='gallery-img' src='imgs/Folks/cj-and-branches.jpeg'>
-                <img class='gallery-img' src='imgs/Folks/SAM_9002.jpg'>
-                <img class='gallery-img' src='imgs/Folks/SAM_9108.jpg'>
-                <img class='gallery-img' src='imgs/Folks/SAM_9143.jpg'>
-            </div>
-            <div class='img-cluster centre-txt '>
-                <h3>wides</h3>
-                <hr>
-                <img class='gallery-img' src='imgs/Wides/200221000000040012.jpg'>
-                <img class='gallery-img' src='imgs/Wides/5853-PCL-001.JPG'>
-                <img class='gallery-img' src='imgs/Wides/200221000000040013.jpg'>
-                <img class='gallery-img' src='imgs/Wides/200221000000040008.jpg'>
-                
-                <img class='gallery-img' src='imgs/Wides/5853-PCL-002.JPG'>
-            </div>
-            <div class='img-cluster centre-txt '>
-                <h3>music</h3>
-                <hr>
-                <img class='gallery-img' src='imgs/Music/5854-PCL-010.JPG'>
-                <img class='gallery-img' src='imgs/Music/5854-PCL-021.JPG'>
-                <img class='gallery-img' src='imgs/Music/5855-PCL-024.JPG'>
-                <img class='gallery-img' src='imgs/Music/5855-PCL-029.JPG'>
-                <img class='gallery-img' src='imgs/Music/6033-PCL-003.JPG'>
-                <img class='gallery-img' src='imgs/Music/6034-PCL-007.JPG'>
-                <img class='gallery-img' src='imgs/Music/6034-PCL-034.JPG'>                
-            </div>
-        </div>   
-    </header>
+    </div>
+    
+    <div id='page-content'>
+        <div class='img-cluster centre-txt '>
+            <h3>folks</h3>
+            <hr>
+            <img class='gallery-img' src='imgs/Folks/000008.JPG'>
+            <img class='gallery-img' src='imgs/Folks/cj-and-branches.jpeg'>
+            <img class='gallery-img' src='imgs/Folks/SAM_9002.jpg'>
+            <img class='gallery-img' src='imgs/Folks/SAM_9108.jpg'>
+            <img class='gallery-img' src='imgs/Folks/SAM_9143.jpg'>
+        </div>
+        <div class='img-cluster centre-txt '>
+            <h3>wides</h3>
+            <hr>
+            <img class='gallery-img' src='imgs/Wides/200221000000040012.jpg'>
+            <img class='gallery-img' src='imgs/Wides/5853-PCL-001.JPG'>
+            <img class='gallery-img' src='imgs/Wides/200221000000040013.jpg'>
+            <img class='gallery-img' src='imgs/Wides/200221000000040008.jpg'>
+            
+            <img class='gallery-img' src='imgs/Wides/5853-PCL-002.JPG'>
+        </div>
+        <div class='img-cluster centre-txt '>
+            <h3>music</h3>
+            <hr>
+            <img class='gallery-img' src='imgs/Music/5854-PCL-010.JPG'>
+            <img class='gallery-img' src='imgs/Music/5854-PCL-021.JPG'>
+            <img class='gallery-img' src='imgs/Music/5855-PCL-024.JPG'>
+            <img class='gallery-img' src='imgs/Music/5855-PCL-029.JPG'>
+            <img class='gallery-img' src='imgs/Music/6033-PCL-003.JPG'>
+            <img class='gallery-img' src='imgs/Music/6034-PCL-007.JPG'>
+            <img class='gallery-img' src='imgs/Music/6034-PCL-034.JPG'>                
+        </div>
+    </div>   
 </body>
 </html>
