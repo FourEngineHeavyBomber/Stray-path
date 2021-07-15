@@ -1,6 +1,6 @@
 * { 
     margin: 0; 
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nanum Myeongjo', serif;
 }
 #main-logo {
     width: calc(100% - 25px);
@@ -85,9 +85,13 @@ footer {
     margin-bottom: 30px;
 }
 .gallery-img {
-    width: 100%;
-    max-width: 400px;
+    width: 80%;
+    max-width: 700px;
+    object-fit: cover;
     /* max-height: 200px; */
+}
+.tall-boi {
+    max-height: 400px !important;
 }
 
 /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
@@ -106,7 +110,7 @@ footer {
     #main-logo { 
         grid-column: 1;
         padding: 25px;
-        width: calc(100% - 50px);
+        width: calc(100% - 100px);
     }
     #deskt-nav {
         grid-column: 1;
@@ -141,15 +145,26 @@ footer {
         position: fixed;
         z-index: 1;
     }
+    .menu-footer {
+        font-size: 0.75em;
+        margin-left: 40px;
+        position: fixed;
+        bottom: 50px;
+        color:rgb(68, 68, 68)
+    }
     #page-content {
         width: calc(100% - 300px);
         margin-left: 300px;
         margin-bottom: 250px;
+        margin-top: 200px;
     }
     .img-cluster {
         margin-top: 50px;
     }
-    .gallery-img {padding: 10px;}
+    .gallery-img {
+        padding: 10px;
+        overflow: hidden;
+    }
     .gallery-img:hover { 
         cursor: pointer;
     }
