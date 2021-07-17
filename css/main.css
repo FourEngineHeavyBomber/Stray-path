@@ -65,6 +65,12 @@
     height: 300px;
     border: none;
 }
+.video {
+    border: none;
+    width: 700px;
+    height: 60vh;
+    padding: 50px;
+}
 footer {
     padding-top: 25px;
     text-align: center;
