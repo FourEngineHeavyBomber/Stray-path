@@ -1,6 +1,7 @@
 * { 
     margin: 0; 
     font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: 3px;
 }
 #main-logo {
     width: calc(100% - 25px);

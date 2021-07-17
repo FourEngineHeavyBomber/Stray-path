@@ -4,28 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connor films</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src='js/master.js'></script>
+    <title>Stray Path</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src='js/mob-menu-toggle.js'></script>
 </head>
 <body>
     <header>
-        <h1 class='header-text' id='title'>Stray Path</h1>
-        <h5 class='header-text' id='reel' onclick='redir("show-reel.html")'>show reel</h5>
-        <h5 class='header-text' id='bright-trip'>bright trip</h5>
+        <img src='imgs/logo.png' id='main-logo' class='centre'>
+        <div id='mob-nav'>
+            <img id='hamburger-bar' src='imgs/menu.png' onclick='fn()'>
+            <div id='mob-nav-menu' class='hide-me'>
+                <button class='mobile-close-btn' onclick='undo()'>&times;</button>
+                <button class='mobile-nav-btn' onclick="redir('#')">stills</button>
+                <button class='mobile-nav-btn' onclick="redir('on-camera.html')">on camera</button>
+                <button class='mobile-nav-btn' onclick="redir('directing.html')">directing</button>
+            </div>
+        </div>
+        <div id='deskt-nav'>
+            <ul>
+                <li><a href='stills.html'>stills</a></li>
+                <li><a href='on-camera.html'>on camera</a></li>
+                <li><a href='directing.html'>directing</a></li>
+                <li><a href='#'>non-fiction</a></li>
+                <li><a href='#'>music videos</a></li>
+                <li><a href='contact.html'>contact</a></li>
+            </ul>
+        </div>
+
+        <!-- <iframe 
+            id='main-video'
+            src="https://vimeo.com/575161088?fbclid=IwAR1zx2si0AIfT1BSXkNZPt3gInu95sg9PTjxWJz9BJSod38XtChxJhBIYig" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+        <iframe 
+            id='main-video'
+            src="https://player.vimeo.com/video/575161088?autoplay=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </header>
-    <!-- <div id='main_gif'></div> -->
-    <iframe 
-        id='main-video'
-        src="https://www.youtube.com/embed/MECjd8IEFTk">
-    </iframe>
-    <footer>
+    <!-- <footer>
         <h3>contact</h3>
-        <p>connor@lancastermail.com</p>
-        <p>&copy Anton Huggard & Connor Curlewis 2021</p>
-        <img id='insta-logo' src='imgs/insta.png'>
-    </footer>
+        <p>connor.curlewis@gmail.com</p>
+        <p>027 275 4101</p>
+        <p>&copy Connor Curlewis 2021</p>
+        <p>Website built by <a href='https://github.com/AntonHuggard'>Anton Huggard</a></p> -->
+        <!-- <img id='insta-logo' src='imgs/insta.png'> -->
+    <!-- </footer> -->
 </body>
 </html>
