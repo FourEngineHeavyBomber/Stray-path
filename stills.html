@@ -13,17 +13,26 @@
     <script src='js/embiggen.js'></script>
 </head>
 <body>
+    <div id='mob-nav'>
+        <img id='hamburger-bar' src='imgs/menu.png' onclick='fn()'>
+        <div id='mob-nav-menu' class='hide-me'>
+            <button class='mobile-close-btn' onclick='undo()'>&times;</button>
+            <button class='mobile-nav-btn' onclick="redir('#')">stills</button>
+            <button class='mobile-nav-btn' onclick="redir('on-camera.html')">on camera</button>
+            <button class='mobile-nav-btn' onclick="redir('directing.html')">directing</button>
+        </div>
+    </div>
     <div id='nav-content'>
         <img src='imgs/logo.png' id='main-logo' class='centre'>
     
         <div id='deskt-nav'>
             <ul>
                 <li><a href='index.html'>home</a></li>
-                <li><a href='#'>stills</a></li>
+                <li><a href='stills.html'>stills</a></li>
                 <li><a href='on-camera.html'>on camera</a></li>
                 <li><a href='directing.html'>directing</a></li>
-                <li><a href='#'>non-fiction</a></li>
-                <li><a href='#'>music videos</a></li>
+                <li><a href='non-fiction.html'>non-fiction</a></li>
+                <li><a href='music-videos.html'>music videos</a></li>
                 <li><a href='contact.html'>contact</a></li>
             </ul>
             <p class='menu-footer'>
