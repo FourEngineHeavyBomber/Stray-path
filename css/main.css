@@ -159,6 +159,10 @@ footer {
         padding-top: 50px;
         color:rgb(68, 68, 68)
     }
+    #page-content-index {
+        width: calc(100% - 300px);
+        margin-left: 300px;
+    }
     #page-content {
         width: calc(100% - 300px);
         margin-left: 300px;
