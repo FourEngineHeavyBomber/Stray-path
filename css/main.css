@@ -132,7 +132,7 @@ footer {
         /* background-color: aqua; */
         padding-top: 20px;
         width: 100%;
-        font-size: 1.25em;
+        font-size: 1em;
         /* height: calc(100vh - 400px); */
     }
     #deskt-nav > ul > li { list-style-type: none; }
