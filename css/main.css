@@ -135,6 +135,17 @@ footer {
 }
 #unembiggen-btn:hover{cursor: pointer;}
 
+.contact {
+    height: calc(100vh - 150px);
+    top: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: none;
+    background-image: url(/imgs/contact.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
 /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
 @media only screen and (min-width: 650px) {
     
