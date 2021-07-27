@@ -6,7 +6,7 @@
 }
 #main-logo {
     width: calc(100% - 25px);
-    max-width: 400px;
+    max-width: 200px;
     padding-right: 25px;
     padding-top: 10px;
 }
@@ -69,8 +69,9 @@
 .video {
     border: none;
     width: 100%;
-    max-width: 700px;
+    max-width: 721px;
     height: 60vh;
+    max-height: 444px;
     padding: 50px;
 }
 footer {
@@ -104,6 +105,36 @@ footer {
 }
 .email-txt { letter-spacing: 2px;}
 
+#modal-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    z-index: 2;
+    position: fixed;
+    top:0;
+    left: 0;
+    overflow: auto;
+    display: none;
+}
+#modal-img {
+    max-width: 100vw;
+    height: 100%;
+    display: block;
+    margin: auto;
+    background-position: center center;
+    object-fit: cover;
+}
+#unembiggen-btn {
+    right: 0;
+    font-size: 4em;
+    margin: 0;
+    padding: 0 20px;
+    position: fixed;
+    background-color: transparent;
+    border: none;
+}
+#unembiggen-btn:hover{cursor: pointer;}
+
 /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
 @media only screen and (min-width: 650px) {
     
@@ -118,10 +149,11 @@ footer {
         grid-template-rows: 400px 1fr;
     }
     #main-logo { 
+        padding-right: 25px;
+        padding-top: 10px;
         grid-column: 1;
-        /* padding: 25px;
-        padding-top: 0; */
-        width: calc(100% - 100px);
+        /* width: calc(100% - 100px); */
+        width: 175px;
     }
     #main-logo:hover { cursor: pointer;}
     #deskt-nav {
@@ -146,14 +178,19 @@ footer {
         grid-column: 2;
         grid-row: 1 / 2;
         height: calc(100vh - 50px);
-        width: calc(100% - 50px);
+        width: 100%;
         border: none;
-        padding: 25px;
+    }
+    .video { 
+        padding: 25px 0;
+        width: 100%;
+        margin: auto;
     }
     #nav-content {
         width: 300px;
         height: 100vh;
-        top:20px;
+        top:0;
+        margin-top:20px;
         position: fixed;
         z-index: 1;
     }
@@ -169,7 +206,7 @@ footer {
         margin-left: 300px;
     }
     #page-content {
-        width: calc(100% - 300px);
+        width: calc(100vw - 320px);
         margin-left: 300px;
         margin-bottom: 250px;
         margin-top: 50px;
