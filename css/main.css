@@ -182,9 +182,10 @@ footer {
     
     #deskt-nav > ul > li > a {
         text-decoration: none;
-        color: black;
-        /* font-size: ; */
+        color: rgb(133, 133, 133);
+        line-height: 30px;
     }
+    #deskt-nav > ul > li > a:hover { color: black; }
     #main-video {
         grid-column: 2;
         grid-row: 1 / 2;
