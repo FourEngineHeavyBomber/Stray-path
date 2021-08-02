@@ -72,16 +72,21 @@
     max-width: 721px;
     height: 60vh;
     max-height: 444px;
-    padding: 50px;
+    padding: 50px 0;
+}
+.social-pipe {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: inline-block;
+}
+.social-pipe:hover {
+    cursor: pointer;
 }
 footer {
     padding-top: 25px;
     text-align: center;
     padding-bottom: 35px;
-}
-#insta-logo {
-    size: 10%;
-    max-width: 50px;
 }
 .centre-txt {text-align: center;}
 .main-txt {
@@ -268,6 +273,13 @@ footer {
         padding: none;
         background-image: url(/imgs/contact.JPG);
         background-size: cover;
+    }
+    footer {
+        width: calc(100vw - 320px);
+        margin-left: 300px;
+    }
+    .social-pipe {
+        margin: auto 20px;
     }
     
 }

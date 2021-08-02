@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
     <script src='/js/mob-menu-toggle.js'></script>
+    <script src='/js/socials.js'></script>
 </head>
 
 <!-- 
@@ -29,11 +30,11 @@
             <img id='hamburger-bar' src='/imgs/menu.png' onclick='fn()'>
             <div id='mob-nav-menu' class='hide-me'>
                 <button class='mobile-close-btn' onclick='undo()'>&times;</button>
-                <button class='mobile-nav-btn' onclick="redir('/stills/')">stills</button>
-                <button class='mobile-nav-btn' onclick="redir('/presenting/')">presenting</button>
                 <button class='mobile-nav-btn' onclick="redir('/music-videos/')">music videos</button>
+                <button class='mobile-nav-btn' onclick="redir('/presenting/')">presenting</button>
                 <button class='mobile-nav-btn' onclick="redir('/fiction/')">fiction</button>
                 <button class='mobile-nav-btn' onclick="redir('/non-fiction/')">non-fiction</button>
+                <button class='mobile-nav-btn' onclick="redir('/stills/')">stills</button>
                 <button class='mobile-nav-btn' onclick="redir('/contact/')">contact</button>
             </div>
         </div>
@@ -56,9 +57,9 @@
                     <li><a href='/contact/'>contact</a></li>
                 </ul>
                 <p class='menu-footer'>
-                    027 275 4101<br><br>
-                    <span class='email-txt'>connor.curlewis@gmail.com</span><br>
-                    video production<br>
+                    027 275 4101<br>
+                    <span class='email-txt'>connor.curlewis@gmail.com</span><br><br>
+                    Video production<br>
                     Auckland<br><br>
                     &copy Connor Curlewis 2021
                 </p>
@@ -66,6 +67,13 @@
         </div>
 
         {{ content }}
+
+        <footer>
+            <img class='social-pipe' onclick='goto("https://connorcurlewis.medium.com/")' src='/imgs/social-pipes/medium.png'>
+            <img class='social-pipe' onclick='goto("https://www.linkedin.com/in/connorcurlewis/")' src='/imgs/social-pipes/linkedin.png'>
+            <img class='social-pipe' onclick='goto("https://www.instagram.com/connor__curlewis/")' src='/imgs/social-pipes/instagram.png'>
+            <img class='social-pipe' onclick='goto("https://www.youtube.com/channel/UCYvgW9DBqvTi6V2oT0iF2CQ")' src='/imgs/social-pipes/youtube.svg'>
+        </footer>
 
 </body>
 </html>
