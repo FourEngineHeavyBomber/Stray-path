@@ -180,7 +180,7 @@ footer {
         /* background-color: aqua; */
         padding-top: 20px;
         width: 100%;
-        font-size: 1em;
+        font-size: 0.85em;
         /* height: calc(100vh - 400px); */
     }
     #deskt-nav > ul > li { list-style-type: none; }
@@ -188,7 +188,7 @@ footer {
     #deskt-nav > ul > li > a {
         text-decoration: none;
         color: rgb(133, 133, 133);
-        line-height: 30px;
+        line-height: 35px;
     }
     #deskt-nav > ul > li > a:hover { color: black; }
     #main-video {
