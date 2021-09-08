@@ -149,6 +149,7 @@ footer {
     background-image: url(/imgs/contact.JPG);
     background-size: cover;
     background-position: center;
+    color: white;
 }
 
 /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
