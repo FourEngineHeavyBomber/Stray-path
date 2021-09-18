@@ -166,11 +166,11 @@ footer {
         grid-template-rows: 400px 1fr;
     }
     #main-logo { 
-        padding-right: 25px;
+        padding-right: 0;
         padding-top: 10px;
         grid-column: 1;
         /* width: calc(100% - 100px); */
-        width: 175px;
+        width: 250px;
     }
     #main-logo:hover { cursor: pointer;}
     #deskt-nav {
