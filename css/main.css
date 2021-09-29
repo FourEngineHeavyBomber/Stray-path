@@ -151,6 +151,16 @@ footer {
     background-position: center;
     color: white;
 }
+.video-description {
+    padding: 20px;
+    max-width: 721px;
+    margin: auto;
+    display: block;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    line-height: 2em;
+}
+.video-title { text-align: center; }
 
 /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
 @media only screen and (min-width: 650px) {
