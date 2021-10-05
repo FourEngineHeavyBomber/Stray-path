@@ -39,14 +39,22 @@ while add_video:
 
             
         elif website.lower() == "vm":
-            link = input("paste link here: ")
+            link = input("paste video ID here: ")
             name = input("give the video a name (one word): ")
             lkHtml = "<iframe name = '" + name
-            lkHtml = lkHtml + "' src='" + link
-            lkHtml = lkHtml + "class='video centre' frameborder='0' " 
-            lkHtml = lkHtml + "allow='autoplay; fullscreen; picture-in-picture' allowfullscreen>"
+            lkHtml = lkHtml + "' src='https://player.vimeo.com/video/" + link +"?title=0&byline=0&portrait=0'\n"
+            lkHtml = lkHtml + "class='video centre' frameborder='0' \n" 
+            lkHtml = lkHtml + "allow='autoplay; fullscreen; picture-in-picture' allowfullscreen>\n"
             lkHtml = lkHtml + "</iframe>\n\n"
             lcHtml = lcHtml + lkHtml
+
+            description = input("enter video description: ")
+            lcHtml = lcHtml + "<p class='video-description'>" + description
+            lcHtml = lcHtml + "</p>"
+
+            lcHtml = lcHtml + "\n"
+
+            
         else:
             print("recalcitrance is UNACCEPTABLE")
     else:
