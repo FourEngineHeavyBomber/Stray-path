@@ -1,6 +1,9 @@
-pages = ["video essays", "non-fiction", "fiction", "music videos", ]
+import os
+
+pages = ["video-essays", "non-fiction", "fiction", "music-videos", ]
 
 found_template = False
+page_to_edit = ""
 
 while not found_template:
     input_str = "which page do you want to edit? (non-fiction, music-videos, etc): "
@@ -15,10 +18,10 @@ while not found_template:
                 "is the template you want to edit " + page_to_edit + ".html (y/n)? "
                 )
 
-    if gottem.lower() == "y":
-        found_template = True
-    else:
-        print("that doesn't exist.")
+            if gottem.lower() == "y":
+                found_template = True
+                page_to_edit = page_to_edit + ".html"
+                break
 
 
 option_a = "burn this page to the ground and start adding videos from scratch"
@@ -27,15 +30,56 @@ option_c = "delete a specific video"
 
 selected_option = False
 
+
+def do_option_a():
+    """
+    this function builds a new template from scratch
+    """
+    print()
+
+def do_option_b():
+    """
+    this function adds a new video to the top of the page
+    """
+    print("you selected option B")
+
+    import os.path
+    f = open(os.path.dirname(__file__) + '/../' + page_to_edit)
+
+    lines = f.readlines()
+    for line in lines:
+        print(line)
+    f.close()
+    
+    #var = sys.path.append('../FourEngineHeavyBomber.github.io')
+    #var = os.path.join( os.getcwd(), '..', 'foo.txt' )
+    #print(var)
+
+def do_option_c():
+    """
+    this function deletes a specified video from the template
+    """
+    print()
+
+
+
 while not selected_option:
-    print("What action do you want to perform on this page?")
+    print("Select an action to perform on this page:")
     print("\tA. " + option_a)
     print("\tB. " + option_b)
     print("\tC. " + option_c)
     option = input("select action (a/b/c): ")
     if option.lower() in ["a", "b", "c"]:
         selected_option = True
+        if option.lower() == "a":
+            do_option_a()
+        elif option.lower() == "b":
+            do_option_b()
+        else:
+            do_option_c()
     else:
         print("that's illegal.")
+
+
 
 print("fin")
