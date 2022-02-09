@@ -51,3 +51,17 @@ def get_video_details():
         print("recalcitrance is UNACCEPTABLE")
 
     return lcHtml
+
+
+def add_videos_loop():
+    lcHtml = ""
+    
+    add_video = True
+    while add_video:
+        cont = input("add video? (t/f): ")
+        if cont.lower() == "t":
+            lcHtml = lcHtml + get_video_details()
+        else:
+            add_video = False
+
+    return lcHtml

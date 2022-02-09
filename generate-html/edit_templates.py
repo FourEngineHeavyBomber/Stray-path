@@ -1,5 +1,5 @@
 import os
-from add_videos import get_video_details
+from add_videos import add_videos_loop, get_video_details
 
 pages = ["video-essays", "non-fiction", "fiction", "music-videos", ]
 
@@ -39,13 +39,7 @@ def do_option_a():
     lcHtml = "---\nlayout: default\npermalink: /" + page + "/\n---\n"
     lcHtml = lcHtml + "<div id='page-content'>\n\n\n"
 
-    add_video = True
-    while add_video:
-        cont = input("add video? (t/f): ")
-        if cont.lower() == "t":
-            lcHtml = lcHtml + get_video_details()
-        else:
-            add_video = False
+    lcHtml = lcHtml + add_videos_loop()
 
     lcHtml = lcHtml + "</div>\n"
     print(lcHtml)
@@ -66,6 +60,10 @@ def do_option_b():
     for line in lines:
         print(line)
     f.close()
+
+    html_injection = add_videos_loop()
+
+    print(html_injection)
     
     #var = sys.path.append('../FourEngineHeavyBomber.github.io')
     #var = os.path.join( os.getcwd(), '..', 'foo.txt' )
