@@ -38,9 +38,7 @@ def do_option_a():
     """
     lcHtml = "---\nlayout: default\npermalink: /" + page + "/\n---\n"
     lcHtml = lcHtml + "<div id='page-content'>\n\n\n"
-
     lcHtml = lcHtml + add_videos_loop()
-
     lcHtml = lcHtml + "</div>\n"
     print(lcHtml)
     
@@ -49,7 +47,7 @@ def do_option_a():
 
 def do_option_b():
     """
-    this function adds a new video to the top of the page
+    this function adds new videos to the top of the page
     """
     print("you selected option B")
 
@@ -57,13 +55,25 @@ def do_option_b():
     f = open(os.path.dirname(__file__) + '/../' + page_to_edit)
 
     lines = f.readlines()
+
+    heres_a_list = []
+    introduction = []
+    
     for line in lines:
-        print(line)
+        heres_a_list.append(line)
+        if "<div id='page-content'>" in line:
+            introduction = heres_a_list
+            heres_a_list = []
     f.close()
 
     html_injection = add_videos_loop()
 
-    print(html_injection)
+    output = introduction
+    output += [html_injection]
+    output.extend(heres_a_list)
+
+    for line in output:
+        print(line)
     
     #var = sys.path.append('../FourEngineHeavyBomber.github.io')
     #var = os.path.join( os.getcwd(), '..', 'foo.txt' )
