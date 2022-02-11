@@ -40,7 +40,10 @@ def do_option_a():
     lcHtml = lcHtml + "<div id='page-content'>\n\n\n"
     lcHtml = lcHtml + add_videos_loop()
     lcHtml = lcHtml + "</div>\n"
-    print(lcHtml)
+
+    f = open("output.html", "w")
+    f.write(lcHtml)
+    f.close()
     
     print()
 
@@ -72,8 +75,9 @@ def do_option_b():
     output += [html_injection]
     output.extend(heres_a_list)
 
-    for line in output:
-        print(line)
+    f = open("output.html", "w")
+    f.writelines(output)
+    f.close()
     
     #var = sys.path.append('../FourEngineHeavyBomber.github.io')
     #var = os.path.join( os.getcwd(), '..', 'foo.txt' )
