@@ -1,5 +1,6 @@
 import os
 from add_videos import add_videos_loop, get_video_details
+from validation import valid_index
 
 pages = ["video-essays", "non-fiction", "fiction", "music-videos", ]
 
@@ -117,10 +118,24 @@ def do_option_c():
             videos.append(curr_video)
             curr_video = []
 
-    print(videos[1])
+    #print(videos[1])
     n = len(videos)
-    print(videos[n-1])
-            
+    #print(videos[n-1])
+
+    kill_more = True
+    hit_list = []
+    print("if the video at the top of the page has index 1, ...")
+    while kill_more:
+        kill_index = input("select the index of the video you want to delete: ")
+        if valid_index(kill_index, n):
+            kill_index = int(kill_index)
+            hit_list.append(kill_index)
+            keep_going = input("do you want to delete any more (y/n): ")
+            if keep_going.lower() != "y":
+                kill_more = False
+            print()
+
+    print(hit_list)
 
     
     print()
