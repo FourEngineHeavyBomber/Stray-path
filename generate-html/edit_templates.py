@@ -88,6 +88,41 @@ def do_option_c():
     """
     this function deletes a specified video from the template
     """
+    print("you selected option C")
+
+    import os.path
+    f = open(os.path.dirname(__file__) + '/../' + page_to_edit)
+
+    lines = f.readlines()
+
+    heres_a_list = []
+    introduction = []
+    
+    for line in lines:
+        heres_a_list.append(line)
+        if "<div id='page-content'>" in line:
+            introduction = heres_a_list
+            heres_a_list = []
+    f.close()
+
+    videos = []
+    curr_video = []
+
+    # separate body into indiv video sections
+    for line in heres_a_list:
+        curr_video += [line]
+        if "/p" in line:
+            print("end of video")
+            # print(curr_video)
+            videos.append(curr_video)
+            curr_video = []
+
+    print(videos[1])
+    n = len(videos)
+    print(videos[n-1])
+            
+
+    
     print()
 
 
@@ -107,7 +142,7 @@ while not selected_option:
         else:
             do_option_c()
     else:
-        print("that's illegal.")
+        print("I don't know how you've done this but it's illegal.")
 
 
 
