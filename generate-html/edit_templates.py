@@ -135,10 +135,28 @@ def do_option_c():
                 kill_more = False
             print()
 
-    print(hit_list)
+    hit_list = list(dict.fromkeys(hit_list))
+    hit_list.sort(reverse = True)
+    print("removing videos at the following indexes: " + str(hit_list))
 
-    
-    print()
+    for element in hit_list:
+        videos.pop(element-1)
+
+    print(videos)
+    # now I need to flatten the videos list so it's a list (not a list of lists)
+    # and append introduction to the start and "</div>" at the end.
+
+    output = introduction
+
+    for thing in videos:
+        for thingy in thing:
+            output += thingy
+
+    output += ["</div>"]
+
+    f = open("output.html", "w")
+    f.writelines(output)
+    f.close()
 
 
 
