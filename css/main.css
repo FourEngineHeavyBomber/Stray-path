@@ -162,6 +162,26 @@ footer {
 }
 .video-title { text-align: center; }
 
+#page-content-index { 
+    height: 100vh;
+    top: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: none;
+    background-image: url(/imgs/homepage-thirsty.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: inline-block;
+ }
+ #index-menu {
+     padding-top: 100vh;
+ }
+ #index-menu > h4 {
+    background-color: white;
+    text-align: center;
+    padding: 200px 0;
+ }
+
 /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
 @media only screen and (min-width: 650px) {
     
@@ -288,6 +308,7 @@ footer {
     footer {
         width: calc(100vw - 320px);
         margin-left: 300px;
+        display: inline-block;
     }
     .social-pipe {
         margin: auto 20px;
