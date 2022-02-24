@@ -172,6 +172,7 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     display: inline-block;
+    width: 100%;
  }
  #index-menu {
      padding-top: 100vh;
@@ -312,6 +313,9 @@ footer {
     }
     .social-pipe {
         margin: auto 20px;
+    }
+    #page-content-index {
+        background-position: 300px;
     }
     
 }
