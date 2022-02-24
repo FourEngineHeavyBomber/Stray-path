@@ -83,11 +83,7 @@
 .social-pipe:hover {
     cursor: pointer;
 }
-footer {
-    padding-top: 25px;
-    text-align: center;
-    padding-bottom: 35px;
-}
+
 .centre-txt {text-align: center;}
 .main-txt {
     margin-top: 200px;
@@ -182,6 +178,36 @@ footer {
     text-align: center;
     padding: 200px 0;
  }
+.blck-bckgd { 
+    color: white;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.897);
+    text-decoration: none;
+    line-height: 70px;
+    padding: 10px;
+}
+.embggn { font-size: 2.5em; }
+#grass-boi { 
+    display: inline-block;
+    background-image: url(/imgs/grass-boi.png);
+    background-size: cover;
+    width: 100%;
+}
+#testimonials-link { 
+    text-align: center; 
+    width: 100%;
+    padding: 0;
+    display: inline-block;
+    margin-top: 400px;
+    margin-bottom: 400px;
+    overflow: hidden;
+}
+footer {
+    padding-top: 25px;
+    text-align: center;
+    padding-bottom: 35px;
+    display: inline-block;
+}
 
 /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
 @media only screen and (min-width: 650px) {
