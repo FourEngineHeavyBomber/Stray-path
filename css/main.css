@@ -136,15 +136,6 @@
 }
 #unembiggen-btn:hover{cursor: pointer;}
 
-/* .contact {
-    height: calc(100vh - 150px);
-    top: 0;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding: none;
-    
-    color: white;
-} */
 .contact > img {
     max-width: 100%;
 }
