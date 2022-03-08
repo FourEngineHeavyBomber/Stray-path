@@ -136,17 +136,15 @@
 }
 #unembiggen-btn:hover{cursor: pointer;}
 
-.contact {
+/* .contact {
     height: calc(100vh - 150px);
     top: 0;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     padding: none;
-    /* background-image: url(/imgs/contact.JPG);
-    background-size: cover;
-    background-position: center;
-    color: white; */
-}
+    
+    color: white;
+} */
 .contact > img {
     max-width: 100%;
 }
@@ -353,15 +351,30 @@ footer {
 }
 
 @media only screen and (max-width: 1000px) {
-    /* .contact {
-        display: block;
-    } */
+    .main-txt {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .contact-container {
+        padding-top: 0px !important;
+        margin-top: 0 !important;
+    }
+    .contact {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        background-image: url(/imgs/contact-thirsty.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .contact > img {
+        display: none;
+    }
  
     .contact > div > p {
         position: relative;
         /* width: 100%; */
         color: white;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.795);
     }
     #p1 { top: 30px; }
     #p2 { top: 60px; }
