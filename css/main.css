@@ -29,27 +29,33 @@
 #hamburger-bar:hover { 
     cursor: pointer;
     }
-.show-me { display: bloxk; }
-.hide-me { display:  none; }
+.show-me { 
+    top: 0;
+}
+.hide-me { 
+    top: -110vh;
+}
 #mob-nav-menu {
     z-index: 2;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(68, 68, 68);
+    background-color: rgba(255, 255, 255, 0.801);
     position: fixed;
+    transition: 0.5s;
 }
 .mobile-nav-btn {
     width: 100%;
     font-size: 2em;
     margin: 5px 0;
-    background-color: rgb(204, 204, 204);
+    color: white;
+    background-color: black;
     border: none;
 
 }
 .mobile-nav-btn:hover {cursor: pointer;}
 .mobile-nav-btn:active {
     transform: translateY(2px);
-    background-color: white;
+    background-color: rgb(179, 179, 179);
 }
 .mobile-close-btn {
     font-size: 2em;
@@ -57,7 +63,8 @@
     margin: 10px;
     padding: 0 10px;
     border: none;
-    background-color: rgb(204, 204, 204);
+    color: white;
+    background-color: black;
 }
 .mobile-close-btn:hover {cursor: pointer;}
 #deskt-nav {display: none;}
