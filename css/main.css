@@ -208,6 +208,13 @@ footer {
     display: inline-block;
     width: 100%;
 }
+.contact-text {
+    text-align: left;
+    padding-left: 50px;
+}
+.space-top {
+    padding-top: 20px;
+}
 
 /* arbitrary decision to switch between mobile and desktop at 650px but whatever */
 @media only screen and (min-width: 650px) {
@@ -375,6 +382,8 @@ footer {
         background-color: rgba(0, 0, 0, 0.795);
     }
     #p1 { top: 30px; }
-    #p2 { top: 60px; }
-    #p3 { top: 90px;}
+    #p2 { top: 90px; }
+    #p3 { top: 120px;}
+    #p4 { top: 150px;}
+    .space-top {padding-top: 0;}
 }
