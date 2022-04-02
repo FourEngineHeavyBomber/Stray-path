@@ -2,7 +2,7 @@ import os
 from add_videos import add_videos_loop, get_video_details
 from validation import valid_index
 
-pages = ["video-essays", "non-fiction", "fiction", "music-videos", ]
+pages = ["presenting", "corporate" "non-fiction", "fiction", "music-videos", ]
 
 found_template = False
 page_to_edit = ""
