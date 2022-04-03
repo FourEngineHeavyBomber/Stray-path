@@ -386,4 +386,8 @@ footer {
     #p3 { top: 120px;}
     #p4 { top: 150px;}
     .space-top {padding-top: 0;}
+    .contact-text {
+        text-align: center;
+        padding-left: 0px;
+    }
 }
