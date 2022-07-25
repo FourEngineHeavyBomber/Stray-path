@@ -91,7 +91,10 @@
     cursor: pointer;
 }
 
-.centre-txt {text-align: center;}
+.centre-txt {
+    text-align: center;
+}
+
 .main-txt {
     margin-top: 200px;
     margin-bottom: 200px;
@@ -206,6 +209,10 @@
     line-height: 50px;
     padding: 10px;
 }
+.blck-bckgd a {
+    color: white;
+    text-decoration: none;
+}
 .embggn { font-size: 2.5em; }
 #grass-boi { 
     display: inline-block;
@@ -302,7 +309,6 @@ footer {
     .menu-footer {
         font-size: 0.75em;
         margin-left: 40px;
-        /* position: fixed; */
         padding-top: 50px;
         color:rgb(68, 68, 68)
     }
@@ -404,11 +410,9 @@ footer {
         color: white;
         background-color: rgba(0, 0, 0, 0.795);
     }
-    #p1 { top: 30px; }
-    #p2 { top: 90px; }
-    #p3 { top: 120px;}
-    #p4 { top: 150px;}
-    .space-top {padding-top: 0;}
+    .space-top {
+        padding-top: 20px;
+    }
     .contact-text {
         text-align: center;
         padding-left: 0px;
