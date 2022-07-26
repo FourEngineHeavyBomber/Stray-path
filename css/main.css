@@ -67,7 +67,7 @@
     background-color: black;
 }
 .mobile-close-btn:hover {cursor: pointer;}
-#deskt-nav {display: none;}
+#deskt-nav { display: none; }
 #main-video {
     width: 100%; 
     height: 300px;

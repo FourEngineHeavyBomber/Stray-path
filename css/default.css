@@ -1,0 +1,132 @@
+* { 
+    margin: 0; 
+    font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+#main-logo {
+    width: calc(100% - 25px);
+    max-width: 200px;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+
+#mob-nav {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 95%;
+}
+#hamburger-bar {
+    width: 75px;
+    padding-top: 10px;
+    right: 10px;
+    position: fixed;
+}
+#hamburger-bar:hover { 
+    cursor: pointer;
+    }
+.show-me { 
+    top: 0;
+}
+.hide-me { 
+    top: -110vh;
+}
+#mob-nav-menu {
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.801);
+    position: fixed;
+    transition: 0.5s;
+}
+.mobile-nav-btn {
+    width: 100%;
+    font-size: 2em;
+    margin: 5px 0;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.mobile-nav-btn:active {
+    transform: translateY(2px);
+    background-color: rgb(179, 179, 179);
+}
+.mobile-close-btn {
+    font-size: 2em;
+    float: right;
+    margin: 10px;
+    padding: 0 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+#dsk-nav { 
+    display: none; 
+}
+
+
+@media only screen and (min-width: 650px) and (min-height: 600px) {
+    body {
+        background-color: black;
+    }
+    #navigation {
+        width: 300px;
+        height: 100vh;
+        top:0;
+        position: fixed;
+        z-index: 1;
+        background-color: white;
+    }
+    #main-logo {
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+    #mob-nav {
+        display: none;
+    }
+    #dsk-nav {
+        display: block;
+        padding: 20px;
+    }
+    #dsk-nav ul li { 
+        list-style-type: none; 
+    }
+    #dsk-nav ul li a { 
+        text-decoration: none;
+        color: rgb(133, 133, 133);
+        line-height: 35px;
+        transition: 0.5s;
+    }
+    #dsk-nav ul li a:hover { 
+        color: black; 
+        padding-left: 5px;
+    }
+    #menu-footer {
+        font-size: 0.75em;
+        margin-left: 40px;
+        padding-top: 50px;
+        color:rgb(68, 68, 68)
+    }
+}
+
+footer {
+    padding-top: 25px;
+    text-align: center;
+    padding-bottom: 35px;
+    display: inline-block;
+    width: 100%;
+}
+
+.social-pipe {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+}
