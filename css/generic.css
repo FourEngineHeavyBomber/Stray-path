@@ -31,17 +31,6 @@
     margin: auto;
 }
 
-@media only screen and (min-width: 750px) and (min-height: 600px) {
-    .two-link-band {
-        display: grid;
-        width: 500px;
-        margin: auto;
-        grid-template-columns: 200px 200px;
-        column-gap: 100px;
-    }
-    
-}
-
 .two-link-band a {
     text-decoration: none;
     font-size: 1.2em;
@@ -59,6 +48,25 @@
     width: 100%;
 }
 
+#grass-boi {
+    background-image: url(/imgs/grass-boi.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+}
+
+#testimonials-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+}
+
 iframe {
     border: none;
     display: block;
@@ -70,6 +78,14 @@ iframe {
 }
 
 @media only screen and (min-width: 750px) and (min-height: 600px) {
+
+    .two-link-band {
+        display: grid;
+        width: 430px;
+        margin: auto;
+        grid-template-columns: 180px 180px;
+        column-gap: 70px;
+    }
 
     iframe {
         width: 100vw;

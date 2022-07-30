@@ -92,6 +92,9 @@
         display: block;
         padding: 20px;
     }
+    #dsk-nav ul {
+        width: 120px;
+    }
     #dsk-nav ul li { 
         list-style: none; 
     }
@@ -100,12 +103,40 @@
         color: rgb(133, 133, 133);
         line-height: 35px;
         font-weight: normal;
-        transition: 0.5s;
+        text-decoration: none;
+        display: block;
+        position: relative;
     }
     #dsk-nav ul li a:hover { 
         color: black; 
-        padding-left: 5px;
     }
+    
+    #dsk-nav ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.1em;
+      background-color: black;
+      opacity: 0;
+      transition: opacity 300ms, transform 300ms;
+    }
+    
+    #dsk-nav ul li a {
+      overflow: hidden;
+    }
+    
+    #dsk-nav ul li a::after {
+      opacity: 1;
+      transform: translate3d(-100%, 0, 0);
+    }
+    
+    #dsk-nav ul li a:hover::after, #dsk-nav ul li a:focus::after{
+      transform: translate3d(0, 0, 0);
+    }
+
+
     #menu-footer {
         font-size: 0.75em;
         margin-left: 40px;
