@@ -3,13 +3,60 @@
     margin: auto;
 }
 
-#index-menu {
+#main {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#index-main {
     background-image: url(/imgs/home-thmbnl-cropped.jpg);
     background-repeat:no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     padding-top: 100vh;
+}
+
+#index-first-txt {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+#index-first-txt h1 {
+    font-weight: normal !important;
+    font-size: 2.5em !important;
+}
+
+.two-link-band {
+    display: grid;
+    margin: auto;
+}
+
+@media only screen and (min-width: 750px) and (min-height: 600px) {
+    .two-link-band {
+        display: grid;
+        width: 500px;
+        margin: auto;
+        grid-template-columns: 200px 200px;
+        column-gap: 100px;
+    }
+    
+}
+
+.two-link-band a {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.black-background {
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
 }
 
 iframe {
