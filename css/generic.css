@@ -77,6 +77,22 @@ iframe {
     margin-bottom: 50px;
 }
 
+.video-title {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+.video-description {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 800px;
+}
+
 @media only screen and (min-width: 750px) and (min-height: 600px) {
 
     .two-link-band {
