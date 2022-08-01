@@ -105,8 +105,8 @@ iframe {
     display: block;
 }
 #podcast img {
-    max-width: 100vw;
-    max-height: calc(100vh - 108px);
+    width: 100vw;
+    height: calc(100vh - 108px);
     object-fit: cover;
 }
 
@@ -145,7 +145,7 @@ iframe {
     }
     #podcast img {
         max-width: 100%;
-        max-height: 100vh;
+        height: 100vh;
     }
 
     #podcast div {
