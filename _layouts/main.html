@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://straypath.org/imgs/straypath-icon.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/generic.css">
+    <script src='/js/mob-menu-toggle.js'></script>
+    <script src='/js/socials.js'></script>
+    <title>Stray Path</title>
+</head>
+<body>
+    <div id="navigation">
+        <img 
+            src='https://straypath.org/imgs/new-Logo.png'  
+            id='main-logo' 
+            class='centre'  
+            onclick="redir('/')"
+            alt='home' />
+        <div id="dsk-nav">
+            <ul>
+                <li><a href='/presenting/'>presenting</a></li>
+                <li><a href='/corporate'>corporate</a></li>
+                <li><a href='/non-fiction/'>non-fiction</a></li>
+                <li><a href='/fiction/'>fiction</a></li>
+                <li><a href='/music-videos/'>music videos</a></li>
+                <li><a href='/stills/'>stills</a></li>
+                <li><a href='/podcast/'>podcast</a></li> 
+                <li><a href='/contact/'>contact</a></li> 
+                <li></li>       
+            </ul>
+            <p id='menu-footer'>
+                video production<br>
+                Auckland<br><br>
+                &copy Stray Path 2022
+            </p>
+        </div>
+        <div id="mob-nav">
+            <img id='hamburger-bar' src='https://straypath.org/imgs/menu.png' onclick='fn()'>
+            <div id='mob-nav-menu' class='hide-me'>
+                <button class='mobile-close-btn' onclick='undo()'>&times;</button>
+                <button class='mobile-nav-btn' onclick="redir('/presenting/')">presenting</button>
+                <button class='mobile-nav-btn' onclick="redir('/corporate/')">corporate</button>
+                <button class='mobile-nav-btn' onclick="redir('/non-fiction/')">non-fiction</button>
+                <button class='mobile-nav-btn' onclick="redir('/fiction/')">fiction</button>
+                <button class='mobile-nav-btn' onclick="redir('/music-videos/')">music videos</button>
+                <button class='mobile-nav-btn' onclick="redir('/stills/')">stills</button>
+                <button class='mobile-nav-btn' onclick="redir('/podcast/')">podcast</button>
+                <button class='mobile-nav-btn' onclick="redir('/contact/')">contact</button>
+            </div>
+        </div>
+    </div>
+
+
+    {{ content }}
+
+
+    <footer>
+        <img 
+            class='social-pipe' 
+            onclick='goto("https://connorcurlewis.medium.com/")' 
+            src='https://straypath.org/imgs/social-pipes/medium.png'>
+        <img 
+            class='social-pipe' 
+            onclick='goto("https://www.linkedin.com/in/connorcurlewis/")' 
+            src='https://straypath.org/imgs/social-pipes/linkedin-black.png'>
+        <img 
+            class='social-pipe' 
+            onclick='goto("https://www.instagram.com/connor__curlewis/")' 
+            src='https://straypath.org/imgs/social-pipes/insta-black.jpg'>
+        <img 
+            class='social-pipe' 
+            onclick='goto("https://www.youtube.com/channel/UCYvgW9DBqvTi6V2oT0iF2CQ")' 
+            src='https://straypath.org/imgs/social-pipes/youtube-black.png'>
+        <div id="huggards">
+            Huggards Website Ltd.
+        </div>
+    </footer>
+</body>
+</html>

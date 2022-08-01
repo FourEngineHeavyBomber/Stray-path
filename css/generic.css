@@ -1,0 +1,157 @@
+.centre {
+    display: block;
+    margin: auto;
+}
+
+.centre-text {
+    text-align: center;
+}
+
+#main {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#index-main {
+    background-image: url(/imgs/home-thmbnl-cropped.jpg);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100vh;
+}
+
+#index-first-txt {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+h1 {
+    font-weight: normal !important;
+    font-size: 2.5em !important;
+}
+
+.two-link-band {
+    display: grid;
+    margin: auto;
+}
+
+.two-link-band a {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.black-background {
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+#grass-boi {
+    background-image: url(/imgs/grass-boi.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+}
+
+#testimonials-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+}
+
+iframe {
+    border: none;
+    display: block;
+    margin: auto;
+    width: calc(100vw - 20px);
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.video-title {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+.video-description {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 800px;
+}
+
+.space-left {
+    padding-left: 30px;
+}
+
+#podcast {
+    display: block;
+}
+#podcast img {
+    width: 100vw;
+    height: calc(100vh - 108px);
+    object-fit: cover;
+}
+
+#podcast div {
+    position: absolute;
+    top: 200px;
+    background-color: rgba(255, 255, 255, 0.781);
+    width: 100%;
+}
+
+#podcast-link {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+@media only screen and (min-width: 750px) and (min-height: 600px) {
+
+    .two-link-band {
+        display: grid;
+        width: 430px;
+        margin: auto;
+        grid-template-columns: 180px 180px;
+        column-gap: 70px;
+    }
+
+    iframe {
+        width: 100vw;
+        max-width: calc(100vw - 320px);
+        height: 500px;
+    }   
+
+    #podcast {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #podcast img {
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    #podcast div {
+        margin-top: 50px;
+        width: initial;
+        position: initial;
+        top: initial;
+    }
+}
