@@ -37,8 +37,8 @@ def do_option_a():
     """
     this function builds a new template from scratch
     """
-    lcHtml = "---\nlayout: default\npermalink: /" + page + "/\n---\n"
-    lcHtml = lcHtml + "<div id='page-content'>\n\n\n"
+    lcHtml = "---\nlayout: main\npermalink: /" + page + "/\n---\n"
+    lcHtml = lcHtml + "<div id='main'>\n\n\n"
     lcHtml = lcHtml + add_videos_loop()
     lcHtml = lcHtml + "</div>\n"
 
