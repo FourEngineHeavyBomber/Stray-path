@@ -103,6 +103,7 @@
         text-decoration: none;
         color: rgb(133, 133, 133);
         line-height: 35px;
+        font-size: 0.75em;
         font-weight: normal;
         text-decoration: none;
         display: block;
@@ -117,7 +118,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 100%;
+      width: 50%;
       height: 0.1em;
       background-color: black;
       opacity: 0;
