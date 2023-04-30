@@ -12,7 +12,7 @@
 }
 
 #index-main {
-    background-image: url(Stray-path/imgs/index-2209.jpg);
+    background-image: url(../imgs/index-2209.jpg);
     background-repeat:no-repeat;
     background-position: center center;
     background-size: cover;
@@ -53,7 +53,7 @@ h1 {
 }
 
 #grass-boi {
-    background-image: url(Stray-path/imgs/grass-boi.png);
+    background-image: url(../imgs/grass-boi.png);
     background-repeat:no-repeat;
     background-position: center center;
     background-size: cover;
